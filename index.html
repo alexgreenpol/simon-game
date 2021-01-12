@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simon</title>
+</head>
+
+<body>
+    <main id="main">
+        <div class="game">
+            <button id="green" title="Green" class="game-item up left" data-item="0"></button>
+            <button id="red" title="Red" class="game-item up right" data-item="1"></button>
+            <button id="yellow" title="Yellow" class="game-item down left" data-item="2"></button>
+            <button id="blue" title="Blue" class="game-item down right" data-item="3"></button>
+            <div class="game-dashboard">
+                <div id="score" class="score">
+                    00
+                </div>
+                <div class="controls">
+                    <div class="btn-wrapper">
+                        <span id="start-lbl">
+                  start
+                </span>
+                        <button id="start" class="start"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay disabled"></div>
+    </main>
+</body>
+
+</html>

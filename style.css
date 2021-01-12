@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.game {
+    height: 100vh;
+}
+
+.game-item {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: left;
+}
+
+.up.left {
+    background-color: green;
+}
+
+.up.left:active,
+.up.left.active {
+    background-color: #8fff73;
+}
+
+.up.right {
+    background-color: red;
+}
+
+.up.right:active,
+.up.right.active {
+    background-color: #ff6b60;
+}
+
+.down.left {
+    background-color: yellow;
+}
+
+.down.left:active,
+.down.left.active {
+    background-color: #fffdc1;
+}
+
+.down.right {
+    background-color: blue;
+}
+
+.down.right:active,
+.down.right.active {
+    background-color: #76c6ff;
+}
+
+.disabled {
+    cursor: pointer !important;
+    pointer-events: none !important;
+}
+
+.game-dashboard {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    margin-left: -75px;
+    top: 50%;
+    margin-top: -75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.score {
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 2px 0;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.controls {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    margin-top: 10px;
+    background-color: #CE362C;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.start:active {
+    background-color: #ec4f44;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999999;
+}
+
+.disabled {
+    display: none;
+}
